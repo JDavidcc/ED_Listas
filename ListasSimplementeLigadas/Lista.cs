@@ -8,5 +8,12 @@ namespace ListasSimplementeLigadas
 {
     internal class Lista
     {
+        Nodo nodoInicial;
+        Nodo nodoActual;
+        public Lista()
+        {
+            nodoInicial= new Nodo();
+        }
+
     }
 }
