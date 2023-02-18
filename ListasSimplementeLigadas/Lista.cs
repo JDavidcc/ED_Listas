@@ -49,5 +49,23 @@ namespace ListasSimplementeLigadas
             Nodo nodoNuevo = new Nodo(valor);
             nodoActual.Siguiente= nodoNuevo;
         }
+        public Nodo Buscar(string valor)
+        {
+            if (ValidaVacio())
+            {
+                return null;
+            }
+            nodoActual = nodoInicial;
+            while (nodoActual.Siguiente != null)
+            {
+                nodoActual = nodoActual.Siguiente;
+                if (nodoActual.Valor==valor)
+                {
+                    return nodoActual;
+                }
+                return null;
+            }
+
+        }
     }
 }
