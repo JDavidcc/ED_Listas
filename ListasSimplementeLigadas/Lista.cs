@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace ListasSimplementeLigadas
 {
-    internal class Program
+    internal class Lista
     {
-        static void Main(string[] args)
-        {
-            Nodo nodo = new Nodo();
-        }
     }
 }
